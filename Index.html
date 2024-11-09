@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="heading">
+            <h1>Weather Report for <span id="city">City</span></h1>
+        </div>
+        <div class="search_container">
+            <div class="search-bar">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-button">Search</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="col2">
+                    <h2>HUMIDITY INFO</h2>
+                </div>
+                <div class="col3">
+                    <div class="image">
+                        <img class="humidity-img" id="humidity-img" src="/low-humidity.png">
+                    </div>
+                    <p>Wind Degree: <span id="wind-degree">--</span>°</p>
+                    <p>Feels Like: <span id="feel-like">--</span>°C</p>
+                    <p>Humidity: <span id="humidity-span">--</span>%</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col2">
+                    <h2>TEMPERATURE</h2>
+                </div>
+                <div class="col3">
+                    <div class="image">
+
+                        <img class="weather-img" id="weather-img" src="/sunny.png" alt="Weather Condition Image">
+                    </div>
+                    <p id="weather-description">--</p> <!-- New line to display weather description -->
+
+                    <p>Current Temperature: <span id="temp">--</span>°C</p>
+                    <p>Minimum Temperature: <span id="min-temp">--</span>°C</p>
+                    <p>Maximum Temperature: <span id="max-temp">--</span>°C</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col2">
+                    <h2>WIND INFO</h2>
+                </div>
+                <div class="col3">
+                    <div class="image">
+                        <img class="wind-img" id="wind-img" src="/moderate-wind.png">
+                    </div>
+                    <p>Wind Speed: <span id="wind-speed-span">--</span> km/h</p>
+                    <p>Sunrise Time: <span id="sunrise">--</span></p>
+                    <p>Sunset Time: <span id="sunset">--</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="daily-forecast-section">
+            <div class="title">Daily Forecast</div>
+            <div class="daily-forecast" id="daily-forecast"></div>
+        </div>
+    </div>
+    <video id="background-video" autoplay loop muted playsinline></video>
+    <footer class="footer">
+        <p>@SHALINI'S WEBSITE</p>
+    </footer>
+
+    <script src="weather.js"></script>
+
+</body>
+</html>

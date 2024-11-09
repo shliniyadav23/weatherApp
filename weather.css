@@ -1,0 +1,197 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url("https://getwallpapers.com/wallpaper/full/7/e/5/137964.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; /* Make sure it stays behind other content */
+}
+
+
+
+.container {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'kalam';
+    font-weight: bold;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-family: 'kalam';
+}
+
+.search_container {
+    margin-bottom: 20px;
+}
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 15px;
+    font-size: 16px;
+    width: 300px;
+    margin-right: 12px;
+    border-radius: 9px;
+    border-color: none;
+    border: 1px solid;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 9px;
+    border-color: none;
+    background-color:lightslategrey;
+    border: 1px solid;
+
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.col {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.6);
+    margin-top: 70px;
+    /* margin: 20px 0; */
+    border:1px solid;
+
+}
+
+.col2 {
+    margin-bottom: 10px;
+    font-family: 'Kalam';
+}
+
+.image img {
+    width: 50px;
+    height: 50px;
+}
+
+.daily-forecast-section {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 20px;
+
+}
+
+.daily-forecast {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    
+}
+
+.forecast-day p {
+    margin: 5px 0;
+}
+
+
+
+.forecast-day {
+    
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+    width: 18%;
+    max-width: 270px;
+    height: 18%;
+    text-align: center;
+    margin: 10px 5px;
+    box-shadow: 10px 10px 20px rgba(0,0,0,0.8);
+    border:1px solid;
+
+}
+
+
+@media (min-width: 600px) {
+    .col {
+        width: 45%;
+        margin-top: 20px;
+
+    }
+}
+
+@media (min-width: 900px) {
+    .col {
+        width: 30%;
+    }
+
+    .forecast-day {
+        width: 18%;
+    }
+}
+
+
+
+.sunny-day {
+    background-image: url('https://media.istockphoto.com/id/899335750/vector/pink-color-cloud-paper-style-art-vector.jpg?s=2048x2048&w=is&k=20&c=FbzSJ0cnYRq9hINvE5whtHl6ezxCFqyqFWKV1ded__M=');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.rainy-day {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKALtt_RUchAXeScIIjcf8OUNGM7XbLnQp9mU7NOAWN7mNhvUnhn6oldEhM-u4xc2ZuQ8&usqp=CAU');
+    background-size: cover;
+    background-position: center;
+
+}
+
+.cloudy-day {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/015/151/756/original/cloudy-sun-icon-flat-rain-forecast-vector.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.snowy-day {
+    background-image: url('https://t3.ftcdn.net/jpg/04/61/23/24/360_F_461232454_PtJmpjPOubeqwrQoUm1lCSIsdTzEC0W9.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.misty-day {
+    background-image: url('https://st2.depositphotos.com/2435397/10290/i/450/depositphotos_102905208-stock-illustration-cartoon-scene-with-weather-cloudy.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.footer {
+    text-align: center;
+    padding: 8px;
+    position:static;
+    bottom: 0;
+    margin-top: 150px;
+    font-family: 'Kalam';
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration:underline;
+}
+
